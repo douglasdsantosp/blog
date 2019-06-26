@@ -6,10 +6,9 @@
 }
 
 body{
-    background-image:url(../img/background.png);
+    /* background-image:url(../img/background.png); */
     font-family:Arial, Verdana;
 	font-size:16px;
-    color:white;
 }
 
 .logo{
@@ -42,16 +41,18 @@ li{
 }
 
 .menu a:link{
-    color:#DAA520;
+	/*color:#DAA520;*/
+	color: white;
 }
 
 .menu a:visited{
-    color:#DAA520;
+	/*color:#DAA520;*/
+	color: white;
 }
 
 .conteudo{
 	margin-bottom: 15px;
-	background-color: black;
+	/* background-color: black;*/
 }
 
 h2, h3 {
@@ -100,6 +101,10 @@ h3{
 .inicio{
 	color:lightgreen;
 	font-size: 18px;
+}
+
+.conteudo2{
+	text-align: center;
 }
 
 .termino{

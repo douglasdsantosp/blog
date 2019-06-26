@@ -37,7 +37,7 @@
 					<legend><a name="projetos"><h2>Projetos</h2></a></legend>
 					{% for project in projects %}
 					
-					<br><h3>{{ project.title}}</h3>
+					<br><h3><center>{{ project.title}}</center></h3>
                 	<p><label class="descricao">Descrição:</label> {{ project.description}}</p>
 					<p><label class="inicio">Data de ínicio:</label> {{ project.initdate }}</p>
 					<p><label class="termino">Data de término:</label> {{ project.finaldate }}</p>
@@ -46,13 +46,15 @@
         		    {% endfor %}
 				</fieldset>
 				<fieldset class="conteudo">
-					<legend><a name="contato"><h2>Contato</h2></a></legend>
+					<div class="conteudo2">
+						<legend><a name="contato"><h2>Contato</h2></a></legend>
 						<p class="contato"><a HREF="mailto:douglasdsantosp@gmail.com"><img src="{% static 'blog/img/gmail.png' %}" alt="Logo - Gmail"></a></p>
 						<p>douglasdsantosp@gmail.com</p>
 						<p class="contato"><img src="{% static 'blog/img/whatsapp.png' %}" alt="Logo - Whatsapp"></p>
 						<p>(35)99982-4777</p>
 						<p class="contato"><a HREF="https://github.com/douglasdsantosp"><img src="{% static 'blog/img/github.png' %}" alt="Logo - Github"></a></p>
 						<p>github.com/douglasdsantosp</p>
+					</div>
 				</fieldset>
 			</fieldset>
 		</section>
