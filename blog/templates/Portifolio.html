@@ -12,7 +12,8 @@
 	<nav class="menu">
 		<ul>
 			<li><a HREF="#sobremim">Sobre mim</a></li>
-			<li><a HREF="#projetos">Projetos</a></li>
+			<li><a HREF="#formacao">Formação</a></li>
+			<li><a HREF="#experiencia">Experiência</a></li>
 			<li><a HREF="#contato">Contato</a></li>
 		</ul>
 	</nav>
@@ -34,30 +35,38 @@
 						acerca de Tecnologia da informação</p><br>
 				</fieldset>
 				<fieldset class="conteudo">
-					<legend><a name="projetos"><h2>Projetos</h2></a></legend>
-					{% for project in projects %}
+					<legend><a name="formacao"><h2>Formação</h2></a></legend>
+					{% for Formation in formations %}
 					
-					<br><h3><center>{{ project.title}}</center></h3>
-                	<p><label class="descricao">Descrição:</label> {{ project.description}}</p>
-					<p><label class="inicio">Data de ínicio:</label> {{ project.initdate }}</p>
-					<p><label class="termino">Data de término:</label> {{ project.finaldate }}</p>
+					<br><h3><center>{{ Formation.course}}</center></h3><br>
+					<p><label class="descricao">Instituição:</label> {{ Formation.institution}}</p>
+					<p><label class="inicio">Data de ínicio:</label> {{ Formation.initdate }}</p>
+					<p><label class="termino">Data de término:</label> {{ Formation.finaldate }}</p>
+					<br><br>
+        
+        		    {% endfor %}
+				</fieldset>
+				<fieldset class="conteudo">
+					<legend><a name="experiencia"><h2>Experiência</h2></a></legend>
+					{% for experience in experiences %}
+					
+					<br><h3><center>{{ experience.title}}</center></h3>
+					<p><label class="ocupacao">Ocupação:</label> {{ experience.ocupation}}</p>
+					<p><label class="descricao">Descrição:</label> {{ experience.description}}</p>
+					<p><label class="inicio">Data de ínicio:</label> {{ experience.initdate }}</p>
+					<p><label class="termino">Data de término:</label> {{ experience.finaldate }}</p>
 					<br>
         
         		    {% endfor %}
 				</fieldset>
 				<fieldset class="conteudo">
-					<div class="conteudo2">
 						<legend><a name="contato"><h2>Contato</h2></a></legend>
-						<p class="contato"><a HREF="mailto:douglasdsantosp@gmail.com"><img src="{% static 'blog/img/gmail.png' %}" alt="Logo - Gmail"></a></p>
-						<p>douglasdsantosp@gmail.com</p>
-						<p class="contato"><img src="{% static 'blog/img/whatsapp.png' %}" alt="Logo - Whatsapp"></p>
-						<p>(35)99982-4777</p>
-						<p class="contato"><a HREF="https://github.com/douglasdsantosp"><img src="{% static 'blog/img/github.png' %}" alt="Logo - Github"></a></p>
-						<p>github.com/douglasdsantosp</p>
-					</div>
+						<p class="contato"><a HREF="mailto:douglasdsantosp@gmail.com"><img src="{% static 'blog/img/gmail.png' %}" alt="Logo - Gmail"></a><br><br>douglasdsantosp@gmail.com</p>
+						<p class="contato"><img src="{% static 'blog/img/whatsapp.png' align='center' %}" alt="Logo - Whatsapp"><br><br>(35)99982-4777</p>
+						<p class="contato"><a HREF="https://github.com/douglasdsantosp"><img src="{% static 'blog/img/github.png' %}" alt="Logo - Github"><br><br>github.com/douglasdsantosp</a></p>
 				</fieldset>
 			</fieldset>
-		</section>
+		</section><br>
 
 		<footer>
 			<p class="desenvolvimento"> Desenvolvido por Douglas dos Santos Pereira©, 2019</p>

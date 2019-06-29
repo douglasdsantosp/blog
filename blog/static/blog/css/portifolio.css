@@ -52,6 +52,7 @@ li{
 
 .conteudo{
 	margin-bottom: 15px;
+	
 	/* background-color: black;*/
 }
 
@@ -61,12 +62,14 @@ h2, h3 {
 }
 
 .corpo{
+	display: flex;
 	padding: 20px;
 	width: 900px;
 	height: auto;
 	margin: 0 auto;
 	z-index: 0;
 	text-align: justify;
+	text-decoration:none;
 }
 
 .desenvolvimento {
@@ -94,20 +97,31 @@ h3{
 	color: darkslategray;
 }
 .descricao{
-	color:lightseagreen;
+	color:darkviolet;
 	font-size: 18px;
 }
 
 .inicio{
-	color:lightgreen;
+	color:darkgreen;
 	font-size: 18px;
-}
-
-.conteudo2{
-	text-align: center;
 }
 
 .termino{
-	color:lightcoral;
+	color:darkred;
 	font-size: 18px;
+}
+
+.ocupacao{
+	color:darkblue;
+	font-size: 18px;
+}
+.conteudo a:link{
+	/*color:#DAA520;*/
+	color:black;
+	
+}
+
+.conteudo a:visited{
+	/*color:#DAA520;*/
+	color:black;
 }
